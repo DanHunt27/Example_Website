@@ -1,0 +1,320 @@
+body {
+  font-size: 15px;
+	font-family: Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color: #8b9fa2;
+}
+
+.container {
+	width:91%;
+	margin:auto;
+  overflow:hidden;
+}
+
+.button{
+  height:38px;
+  background:#8b9fa2;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+	font-size:1.2em;
+}
+
+
+/* Header */
+header {
+  background:#134a8e;
+  color:#ffffff;
+  padding: 2.5em 0 2em 0;
+  min-height:5.5em;
+}
+
+header #logo {
+	font-size: 1.3em;
+	float: left;
+	text-decoration: underline solid;
+}
+
+header #logo h1 {
+  margin:0;
+}
+
+header .highlight {
+	font-family: Georgia, serif;
+	color: #8b9fa2;
+	text-decoration: underline solid;
+}
+
+header .current a {
+	color: #8b9fa2;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+header nav {
+	float: right;
+	padding-top: .3em;
+}
+
+header li {
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header a:hover {
+	color: #cdcdcd;
+}
+
+/* Display */
+.display {
+	background-image: url(../img/blake-wisz-1554907-unsplash.jpg);
+	background-repeat: no-repeat;
+	height: 250px;
+	background-size: cover;
+	background-position: center;
+	padding: 10em 0;
+	color: #FFF;
+	box-shadow: inset 0px 0px 19px 10px rgba(0,0,0,0.43);
+}
+
+#display-text {
+	font-size: 4em;
+	font-weight: 800;
+	text-align: center;
+	text-shadow: 1px 2px 7px rgba(0,0,0,0.71);
+}
+
+#display-text span {
+	font-size: .5em;
+}
+
+/* Info */
+.info .col-left {
+	padding-top: 2em;
+	width: 45%;
+	float: left;
+	color: #ffffff;
+}
+
+.info .col-right {
+	padding-top: 2em;
+	width: 45%;
+	float: right;
+	color: #ffffff;
+}
+
+.info img {
+	width: 95%;
+}
+
+.text-bg {
+	padding: 1em;
+	background:#e9e9e9;
+	box-shadow: inset 0px 0px 95px -10px rgba(0,0,0,0.22);
+}
+
+/* Newsletter */
+.newsletter {
+	position: relative;
+	padding:15px;
+  color:#ffffff;
+  background:#134a8e;
+	box-shadow: 0px 0px 19px 10px rgba(0,0,0,0.43);
+}
+
+.newsletter h1 {
+  float:left;
+	font-size: 2.2em;
+}
+
+.newsletter form {
+  float:right;
+	padding-top: 2em;
+}
+
+.newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+/* Gallery */
+.gallery {
+	overflow: hidden;
+	background:#8b9fa2;
+  color:#ffffff;
+}
+
+
+.gallery .container {
+  position: relative;
+  width: 48%;
+	float: left;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.image img {
+	width: 100%;
+	opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image img {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #134a8e;
+  font-size: 1em;
+  padding: 1em 2em;
+}
+
+.gallery a {
+	color: #ffffff;
+}
+
+/* Footer */
+footer {
+	background-color: #000000;
+}
+
+.plain-list {
+	margin: 0;
+	padding: 0 2em 0 2em;
+	list-style-type: none;
+}
+
+.col-left {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	width: 40%;
+	float: left;
+	color: #ffffff;
+}
+
+.col-right {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	width: 20%;
+	text-align: center;
+	float: left;
+	color: #ffffff;
+}
+footer p {
+	padding: 0;
+	margin: 0;
+}
+
+#copyright {
+	font-size: .8em;
+	padding-top:8.4em;
+}
+
+
+@media(max-width: 815px){
+	header #logo, header nav, header li, .info .col-left, 
+	.info .col-right, .newsletter h1, .newsletter form, 
+	.gallery .container, .col-left, .col-right {
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+	
+	header #logo {
+	font-size: 1.1em;
+}
+	
+	header li {
+		position: relative;
+		left: -1.3em;
+		padding: 0 1em 0 1em;
+	}
+	
+	#display-text {
+		font-size: 2em;
+		font-weight: 800;
+		text-align: center;
+		text-shadow: 1px 2px 7px rgba(0,0,0,0.71);
+	}
+
+	#display-text span {
+		font-size: .5em;
+	}
+
+	.newsletter {
+		padding:5px;
+	}
+	
+	.newsletter h1 {
+		font-size: 1.97em;
+	}
+
+	.newsletter form {
+		padding-top: 0;
+		padding-bottom: 30px;
+	}
+	
+	.button{
+		height:38px;
+		padding-left: 91px;
+		padding-right:91px;
+	}
+	
+	.gallery .container {
+		width: 90%;
+	}
+	
+	.image {
+		margin: 8px 0 8px 0;
+	}
+	
+	.plain-list {
+		margin: 0;
+		padding: 0 0em 0 0em;
+		list-style-type: none;
+	}
+
+	.col-right {
+		width: 90vw;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+
+	#copyright {
+		padding-top:2em;
+	}
+
+}
+
